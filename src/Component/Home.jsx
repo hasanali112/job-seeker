@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import background from "../assets/All Images/bg.png";
 
 const Home = () => {
+    const [jobs, setjobs] = useState([]);
+    console.log(jobs)
+
+    useEffect(()=>{
+        fetch('jobcatagories.json')
+        .then(res=> res.json())
+        .then(data=> setjobs(data))
+    },[])
   return (
-    <div className="bg-gray-100 my-container flex flex-col items-center justify-between lg:flex-row px-8 ">
-      <div className="mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0">
+    <div >
+      <div className="bg-gray-100 my-container flex flex-col items-center justify-between lg:flex-row px-8 ">
+      <div className="mb-8 lg:max-w-lg  lg:pr-5 lg:mb-0">
         <div className="max-w-6/12 mb-6   lg:mt-8">
           <h1 className="max-w-lg mb-6 mx-8 font-sans text-5xl font-bold tracking-tight text-gray-900  sm:text-5xl sm:leading-none">
             One Step <br /> Closer To Your <br />{" "}
@@ -25,9 +34,28 @@ const Home = () => {
       </div>
       <div className="relative lg:w-1/2 ">
           <div className="w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96">
-            <img src={background} alt="background-cover" />
+            <img src={background} alt="background-cover" className="object-cover w-full h-100 md:h-100 xl:h-100'" />
           </div>
         </div>
+      </div>
+         
+      <div>
+
+            <h1 className="mt-20 text-center font-bold text-4xl mb-4">Job Category List</h1>
+            <p className="text-center font-semibold text-xl text-gray-700">Explore thousands of job opportunities with all the information you need. Its your future</p>
+           <div className="flex flex-col space-y-4 mt-10 items-center justify-around lg:flex-row lg:mx-20 lg:mt-10 lg:mb-10">
+            {
+                jobs.map(job => 
+                    <div className="bg-purple-100 p-4">
+                        <img src={job.logo} alt="job-catagories-cover" className="mb-5"/>
+                        <h4 className="text-base font-sans font-semibold">{job.name}</h4>
+                         <p className="text-gray-700 font-sans font-semibold ">{job.jobsAvailable} Jobs Available</p>
+                    </div>
+                    )
+            }
+            </div>
+      </div>
+     
     </div>
   );
 };
