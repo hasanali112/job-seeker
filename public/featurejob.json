@@ -1,0 +1,185 @@
+[
+    {
+      "id": 9781,
+      "companyLogo": "/src/assets/All Images/google.png",
+      "jobTitle": "Technical Database Engineer",
+      "companyName": "ABC Tech",
+      "remoteOrOnsite": "Remote",
+      "location": "Dhaka, Bangladesh",
+      "fullTimeOrPartTime": "Full-time",
+      "salary": "$100,000 - $120,000",
+      "jobDescription": "ABC Tech is seeking a skilled Software Engineer...",
+      "jobResponsibility": "Responsibilities include developing...",
+      "educationalRequirements": "Bachelor's degree in Computer Science...",
+      "experiences": "3+ years of experience in software development...",
+      "contactInformation": {
+        "phone": "123-456-7890",
+        "email": "jobs@abctech.com"
+      }
+    },
+    {
+      "id":9782,
+      "companyLogo": "/src/assets/All Images/netflix-4 1.png",
+      "jobTitle": "Senior Product Designer",
+      "companyName": "XYZ Corporation",
+      "remoteOrOnsite": "Onsite",
+      "location": "New York City, NY",
+      "fullTimeOrPartTime": "Full-time",
+      "salary": "$80,000 - $90,000",
+      "jobDescription": "XYZ Corporation is seeking a Data Analyst...",
+      "jobResponsibility": "Responsibilities include analyzing...",
+      "educationalRequirements": "Bachelor's degree in Statistics or related field...",
+      "experiences": "2+ years of experience in data analysis...",
+      "contactInformation": {
+        "phone": "987-654-3210",
+        "email": "hr@xyzcorp.com"
+      }
+    },
+    {
+      "id": 9783,
+      "companyLogo": "/src/assets/All Images/tesla-9 1.png",
+      "jobTitle": "Software Engineer",
+      "companyName": "Design Co.",
+      "remoteOrOnsite": "Remote",
+      "location": "New York City, NY",
+      "fullTimeOrPartTime": "Part-time",
+      "salary": "$40,000 - $50,000",
+      "jobDescription": "Design Co. is seeking a creative Graphic Designer...",
+      "jobResponsibility": "Responsibilities include creating...",
+      "educationalRequirements": "Bachelor's degree in Graphic Design or related field...",
+      "experiences": "1+ years of experience in graphic design...",
+      "contactInformation": {
+        "phone": "555-123-4567",
+        "email": "info@designco.com"
+      }
+    },
+    {
+      "id":9784,
+      "companyLogo": "/src/assets/All Images/Group 10021.png",
+      "jobTitle": "Technical Database Engineer",
+      "companyName": "Global Marketing Agency",
+      "remoteOrOnsite": "Onsite",
+      "location": "Los Angeles, CA",
+      "fullTimeOrPartTime": "Full-time",
+      "salary": "$90,000 - $110,000",
+      "jobDescription": "Global Marketing Agency is hiring a Marketing Manager...",
+      "jobResponsibility": "Responsibilities include developing marketing strategies...",
+      "educationalRequirements": "Bachelor's degree in Marketing or related field...",
+      "experiences": "5+ years of experience in marketing...",
+      "contactInformation": {
+        "phone": "777-555-1234",
+        "email": "careers@globalmarketing.com"
+      }
+    },
+    
+     {
+          "id":9785,
+          "companyLogo": "/src/assets/All Images/google.png",
+          "jobTitle": "Financial Analyst",
+          "companyName": "Investment Bank",
+          "remoteOrOnsite": "Onsite",
+          "location": "London, UK",
+          "fullTimeOrPartTime": "Full-time",
+          "salary": "£60,000 - £80,000",
+          "jobDescription": "Investment Bank is hiring a Financial Analyst...",
+          "jobResponsibility": "Responsibilities include conducting financial analysis...",
+          "educationalRequirements": "Bachelor's degree in Finance or related field...",
+          "experiences": "3+ years of experience in financial analysis...",
+          "contactInformation": {
+            "phone": "+44 20 1234 5678",
+            "email": "careers@investmentbank.com"
+          }
+        },
+        {
+          "id":9786,
+          "companyLogo": "/src/assets/All Images/netflix-4 1.png",
+          "jobTitle": "Sales Executive",
+          "companyName": "Tech Solutions Ltd.",
+          "remoteOrOnsite": "Onsite",
+          "location": "San Francisco, CA",
+          "fullTimeOrPartTime": "Full-time",
+          "salary": "$70,000 - $90,000",
+          "jobDescription": "Tech Solutions Ltd. is seeking a Sales Executive...",
+          "jobResponsibility": "Responsibilities include generating new business...",
+          "educationalRequirements": "Bachelor's degree in Business or related field...",
+          "experiences": "3+ years of experience in sales...",
+          "contactInformation": {
+            "phone": "555-555-5555",
+            "email": "jobs@techsolutions.com"
+          }
+        },
+        {
+          "id":9787,
+          "companyLogo": "/src/assets/All Images/tesla-9 1.png",
+          "jobTitle": "Content Writer",
+          "companyName": "Media Agency",
+          "remoteOrOnsite": "Remote",
+          "location": "New York City, NY",
+          "fullTimeOrPartTime": "Part-time",
+          "salary": "$25 - $30 per hour",
+          "jobDescription": "Media Agency is hiring a talented Content Writer...",
+          "jobResponsibility": "Responsibilities include creating engaging content...",
+          "educationalRequirements": "Bachelor's degree in English, Journalism, or related field...",
+          "experiences": "2+ years of experience in content writing...",
+          "contactInformation": {
+            "phone": "555-789-1234",
+            "email": "jobs@mediaagency.com"
+          }
+        },
+        {
+          "id":9788,
+          "companyLogo": "/src/assets/All Images/Group 10021.png",
+          "jobTitle": "Human Resources Manager",
+          "companyName": "Global Manufacturing",
+          "remoteOrOnsite": "Onsite",
+          "location": "Chicago, IL",
+          "fullTimeOrPartTime": "Full-time",
+          "salary": "$80,000 - $100,000",
+          "jobDescription": "Global Manufacturing is seeking an experienced Human Resources Manager...",
+          "jobResponsibility": "Responsibilities include managing HR functions...",
+          "educationalRequirements": "Bachelor's degree in Human Resources or related field...",
+          "experiences": "5+ years of experience in HR management...",
+          "contactInformation": {
+            "phone": "888-444-5678",
+            "email": "careers@globalmanufacturing.com"
+          }
+        },
+        {
+            "id":9789,
+            "companyLogo": "/src/assets/All Images/netflix-4 1.png",
+            "jobTitle": "Data Scientist",
+            "companyName": "Analytics Inc.",
+            "remoteOrOnsite": "Remote",
+            "location": "New York City, NY",
+            "fullTimeOrPartTime": "Full-time",
+            "salary": "$120,000 - $150,000",
+            "jobDescription": "Analytics Inc. is seeking a talented Data Scientist...",
+            "jobResponsibility": "Responsibilities include analyzing complex datasets...",
+            "educationalRequirements": "Master's or Ph.D. degree in Data Science or related field...",
+            "experiences": "5+ years of experience in data science...",
+            "contactInformation": {
+              "phone": "555-888-7777",
+              "email": "jobs@analyticsinc.com"
+            }
+          },
+          {
+            "id":97810,
+            "companyLogo": "/src/assets/All Images/Group 10021.png",
+            "jobTitle": "IT Support Specialist",
+            "companyName": "Tech Solutions Corp.",
+            "remoteOrOnsite": "Onsite",
+            "location": "Seattle, WA",
+            "fullTimeOrPartTime": "Full-time",
+            "salary": "$50,000 - $60,000",
+            "jobDescription": "Tech Solutions Corp. is hiring an IT Support Specialist...",
+            "jobResponsibility": "Responsibilities include providing technical support...",
+            "educationalRequirements": "Associate's degree in IT or related field...",
+            "experiences": "2+ years of experience in IT support...",
+            "contactInformation": {
+              "phone": "123-999-0000",
+              "email": "careers@techsolutionscorp.com"
+            }
+          }
+    ]
+      
+  

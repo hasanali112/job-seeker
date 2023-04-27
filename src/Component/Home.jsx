@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import background from "../assets/All Images/bg.png";
+import Jobcatagories from "./Jobcatagories";
+import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
     const [jobs, setjobs] = useState([]);
@@ -10,6 +12,10 @@ const Home = () => {
         .then(res=> res.json())
         .then(data=> setjobs(data))
     },[])
+
+    const featurejobs = useLoaderData()
+    console.log(featurejobs)
+
   return (
     <div >
       <div className="bg-gray-100 my-container flex flex-col items-center justify-between lg:flex-row px-8 ">
@@ -46,14 +52,39 @@ const Home = () => {
            <div className="flex flex-col space-y-4 mt-10 items-center justify-around lg:flex-row lg:mx-20 lg:mt-10 lg:mb-10">
             {
                 jobs.map(job => 
-                    <div className="bg-purple-100 p-4">
-                        <img src={job.logo} alt="job-catagories-cover" className="mb-5"/>
-                        <h4 className="text-base font-sans font-semibold">{job.name}</h4>
-                         <p className="text-gray-700 font-sans font-semibold ">{job.jobsAvailable} Jobs Available</p>
-                    </div>
+                    <Jobcatagories
+                    key={job.id}
+                    job={job}></Jobcatagories>
                     )
             }
             </div>
+      </div>
+
+      <div className="my-container">
+
+        <h1 className="text-center text-4xl  font-bold">Featured Jobs</h1>
+        <p className="text-center font-semibold text-xl text-gray-700 mt-3 mb-14">Explore thousands of job opportunities with all the information you need. Its your future</p>
+
+        <div  className="grid gap-6 lg:mx-40 mb-8 lg:grid-cols-2 sm:grid-cols-1">
+           {
+            featurejobs.map(featurejob => 
+              <div className="border p-8 rounded">
+                 <img src={featurejob.companyLogo} alt="comapany logo" />
+                 <h1 className="mt-4 text-lg font-sans font-bold">{featurejob.jobTitle}</h1>
+                 <h4 className="mt-2 text-base font-sans font-semibold text-gray-600">{featurejob.companyName}</h4>
+                   <div className="flex">
+                      <button className="border-2 border-indigo-500 mr-4 mt-2 p-1 px-2 text-indigo-500">{featurejob.remoteOrOnsite}</button>
+                      <button className="border-2 border-indigo-500 mr-4 mt-2 p-1 px-2 text-indigo-500">{featurejob.fullTimeOrPartTime}</button>
+                   </div>
+                   <div className="flex">
+                     <h1 className="mt-2 mr-8 text-base font-sans font-semibold text-gray-600">{featurejob.location}</h1>
+                     <h4 className="mt-2  text-base font-sans font-semibold text-gray-600">{featurejob.salary}</h4>
+                   </div>
+                  <button className="mt-4   inline-flex items-center h-9 px-4  font-medium text-white transition duration-200 rounded shadow-md  md:mb-0 bg-indigo-600 hover:bg-blue-700">View Details</button>
+              </div>
+              )
+           }
+        </div>
       </div>
      
     </div>
@@ -61,4 +92,4 @@ const Home = () => {
 };
 
 export default Home;
-<h1>This is home</h1>;
+
