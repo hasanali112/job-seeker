@@ -6,7 +6,6 @@ import Featuresjob from "./Featuresjob";
 
 const Home = () => {
     const [jobs, setjobs] = useState([]);
-    console.log(jobs)
 
     useEffect(()=>{
         fetch('jobcatagories.json')
@@ -15,7 +14,7 @@ const Home = () => {
     },[])
 
     const featurejobs = useLoaderData()
-    console.log(featurejobs)
+    
 
   return (
     <div >
@@ -75,7 +74,6 @@ const Home = () => {
            }
         </div>
       </div>
-     
     </div>
   );
 };
