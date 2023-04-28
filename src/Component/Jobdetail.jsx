@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToDb } from "../Utils/fakeDb";
 
 const Jobdetail = () => {
   const jobData = useLoaderData();
@@ -11,6 +12,12 @@ const Jobdetail = () => {
     const jobDetail = jobData.find((jobId) => jobId.id == id);
     setjobDetails(jobDetail);
   }, []);
+
+
+  const handleApply = (id) =>{
+        console.log(id)
+        addToDb(id)  
+  }
   return (
     <div>
       <h1 className="text-center mb-20 text-4xl font-bold bg-gray-100 p-10">Job Detail</h1>
@@ -30,7 +37,7 @@ const Jobdetail = () => {
         </div>
 
         <div >
-            <div className="bg-purple-100 p-8 w-80 h-96 ml-10 rounded">
+            <div className="bg-purple-100 p-8 w-80  lg:ml-10 rounded">
             <h1 className="text-xl font-bold mt-2">Job detail</h1>
             <hr className="bg-purple-800 h-1"/>
             <div>
@@ -41,13 +48,13 @@ const Jobdetail = () => {
                 <h1 className="text-xl font-bold">Contact information</h1>
                 <hr className="bg-purple-800 h-1"/>
                 <div>
-                    <h1 className="mt-4 text-base font-bold">Phone: <span className="text-gray-600">{jobDetails.contactInformation.phone}</span></h1>
-                    <h1 className="mt-4 text-base font-bold">Email : <span className="text-gray-600">{jobDetails.contactInformation.email}</span></h1>
+                    <h1 className="mt-4 text-base font-bold">Phone: <span className="text-gray-600">{jobDetails.phone}</span></h1>
+                    <h1 className="mt-4 text-base font-bold">Email : <span className="text-gray-600">{jobDetails.email}</span></h1>
                     <h1 className="mt-4 text-base font-bold">Address : <span className="text-gray-600">{jobDetails.location}</span></h1>
                 </div>
             </div>
             </div>
-            <button className="ml-10 mt-4  h-10 w-80 text-center mb-3  font-medium text-white transition duration-200 rounded shadow-md  md:mb-0 bg-blue-400 hover:bg-blue-700" >Apply Now</button>
+            <button onClick={()=>handleApply(id)} className="ml-10 mt-4  h-10 w-80 text-center mb-3  font-medium text-white transition duration-200 rounded shadow-md  md:mb-0 bg-blue-400 hover:bg-blue-700" >Apply Now</button>
         </div>
       </div>
     </div>

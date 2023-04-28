@@ -12,10 +12,9 @@
       "jobResponsibility": "Maintaining and enhancing the performance of existing database programs.Assisting database development teams in designing new database programs that meet the organization's data storage needs.Monitoring databases and related systems to ensure optimized performance.",
       "educationalRequirements": "Bachelor's degree in information systems, information technology, computer science, or similar.Applicable licensing, certification, and registration.A minimum of 2 years experience in database engineering.",
       "experiences": "3+ years of experience in software development...",
-      "contactInformation": {
-        "phone": "123-456-7890",
-        "email": "jobs@abctech.com"
-      }
+      "phone": "123-456-7890",
+      "email": "jobs@abctech.com"
+
     },
     {
       "id":9782,
@@ -30,10 +29,8 @@
       "jobResponsibility": "Identifying opportunities for new products.Analyzing how a new product ties in with market needs and consumer preferences.Setting design requirements based on briefs from internal teams and external partners",
       "educationalRequirements": "BSc/MSc in Product Design, Manufacturing Design Engineering or relevant field.Time-management skills.Experience with design programs (like Illustrator and Sketch).Hands-on experience with computer-aided design (CAD) tools",
       "experiences": "2+ years of experience in data analysis...",
-      "contactInformation": {
         "phone": "987-654-3210",
         "email": "hr@xyzcorp.com"
-      }
     },
     {
       "id": 9783,
@@ -48,10 +45,8 @@
       "jobResponsibility": "Execute full software development life cycle (SDLC).Develop flowcharts, layouts and documentation to identify requirements and solutions.Produce specifications and determine operational feasibility.Develop software verification plans and quality assurance procedures",
       "educationalRequirements": "BSc degree in Computer Science, Engineering or relevant field.Ability to document requirements and specifications.Experience developing web applications using at least one popular web framework (JSF, Wicket, GWT, Spring MVC)",
       "experiences": "1+ years of experience in graphic design...",
-      "contactInformation": {
-        "phone": "555-123-4567",
-        "email": "info@designco.com"
-      }
+      "phone": "555-123-4567",
+      "email": "info@designco.com"
     },
     {
       "id":9784,
@@ -66,10 +61,8 @@
       "jobResponsibility": "Maintaining and enhancing the performance of existing database programs.Assisting database development teams in designing new database programs that meet the organization's data storage needs.",
       "educationalRequirements": "Bachelor's degree in information systems, information technology, computer science, or similar. Applicable licensing, certification, and registration. A minimum of 2 years’ experience in database engineering. In-depth knowledge of Structured Query Language (SQL). Extensive experience with database technologies and architecture.",
       "experiences": "5+ years of experience in marketing...",
-      "contactInformation": {
-        "phone": "777-555-1234",
-        "email": "careers@globalmarketing.com"
-      }
+      "phone": "777-555-1234",
+      "email": "careers@globalmarketing.com"
     },
     
      {
@@ -85,10 +78,8 @@
           "jobResponsibility": "Consolidate and analyze financial data (budgets, income statement forecasts etc) taking into account company’s goals and financial standing. Provide creative alternatives and recommendations to reduce costs and improve financial performance. Assemble and summarize data to structure sophisticated reports on financial status and risks. Develop financial models, conduct benchmarking and process analysis. Conduct business studies on past, future and comparative performance and develop forecast models",
           "educationalRequirements": "Proficient in spreadsheets, databases, MS Office and financial software applications. Hands on experience with statistical analysis and statistical packages. Outstanding presentation, reporting and communication skills. Proven knowledge of financial forecasting and diagnosis, corporate finance and information analysis. Well informed in current financial subjects, accounting, tax laws, money market and business environments.  BS degree in Finance, Economics or related field",
           "experiences": "3+ years of experience in financial analysis...",
-          "contactInformation": {
-            "phone": "+44 20 1234 5678",
-            "email": "careers@investmentbank.com"
-          }
+          "phone": "+44 20 1234 5678",
+          "email": "careers@investmentbank.com"
         },
         {
           "id":9786,
@@ -103,10 +94,9 @@
           "jobResponsibility": "Responsibilities include generating new business...",
           "educationalRequirements": "Bachelor's degree in Business or related field...",
           "experiences": "3+ years of experience in sales...",
-          "contactInformation": {
-            "phone": "555-555-5555",
-            "email": "jobs@techsolutions.com"
-          }
+          "phone": "555-555-5555",
+          "email": "jobs@techsolutions.com"
+
         },
         {
           "id":9787,
@@ -121,10 +111,8 @@
           "jobResponsibility": "Responsibilities include creating engaging content...",
           "educationalRequirements": "Bachelor's degree in English, Journalism, or related field...",
           "experiences": "2+ years of experience in content writing...",
-          "contactInformation": {
-            "phone": "555-789-1234",
-            "email": "jobs@mediaagency.com"
-          }
+          "phone": "555-789-1234",
+          "email": "jobs@mediaagency.com"
         },
         {
           "id":9788,
@@ -139,10 +127,8 @@
           "jobResponsibility": "Responsibilities include managing HR functions...",
           "educationalRequirements": "Bachelor's degree in Human Resources or related field...",
           "experiences": "5+ years of experience in HR management...",
-          "contactInformation": {
-            "phone": "888-444-5678",
-            "email": "careers@globalmanufacturing.com"
-          }
+          "phone": "888-444-5678",
+          "email": "careers@globalmanufacturing.com"
         },
         {
             "id":9789,
@@ -157,10 +143,8 @@
             "jobResponsibility": "Responsibilities include analyzing complex datasets...",
             "educationalRequirements": "Master's or Ph.D. degree in Data Science or related field...",
             "experiences": "5+ years of experience in data science...",
-            "contactInformation": {
               "phone": "555-888-7777",
               "email": "jobs@analyticsinc.com"
-            }
           },
           {
             "id":97810,
@@ -175,10 +159,8 @@
             "jobResponsibility": "Responsibilities include providing technical support...",
             "educationalRequirements": "Associate's degree in IT or related field...",
             "experiences": "2+ years of experience in IT support...",
-            "contactInformation": {
-              "phone": "123-999-0000",
-              "email": "careers@techsolutionscorp.com"
-            }
+            "phone": "123-999-0000",
+            "email": "careers@techsolutionscorp.com"
           }
     ]
       
