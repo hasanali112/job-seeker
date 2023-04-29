@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import background from "../assets/All Images/bg.png";
 import Jobcatagories from "./Jobcatagories";
-import { useLoaderData } from "react-router-dom";
 import Featuresjob from "./Featuresjob";
 
 const Home = () => {
     const [jobs, setjobs] = useState([]);
+    const [featureJobs, setfeatureJobs] =useState([])
 
     useEffect(()=>{
         fetch('jobcatagories.json')
@@ -13,7 +13,17 @@ const Home = () => {
         .then(data=> setjobs(data))
     },[])
 
-    const featurejobs = useLoaderData()
+    useEffect(()=>{
+      loadData()
+    },[])
+
+    const loadData = async () =>{
+      await fetch('featurejob.json')
+      .then(res=> res.json())
+      .then(data=> setfeatureJobs(data))
+    }
+
+    console.log(featureJobs)
     
 
   return (
@@ -67,7 +77,7 @@ const Home = () => {
 
         <div  className="grid gap-6 lg:mx-40 mb-8 lg:grid-cols-2 sm:grid-cols-1">
            {
-            featurejobs.map(featurejob => 
+            featureJobs.map(featurejob => 
                 <Featuresjob key={featurejob.id}
                 featurejob={featurejob}></Featuresjob>
               )

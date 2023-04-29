@@ -7,7 +7,7 @@ const Jobcatagories = ({job}) => {
                         <img src={job.logo} alt="job-catagories-cover" className="mb-5"/>
                         <h4 className="text-base font-sans font-semibold">{job.name}</h4>
                          <p className="text-gray-700 font-sans font-semibold ">{job.jobsAvailable} Jobs Available</p>
-                    </div>
+            </div>
         </div>
     );
 };

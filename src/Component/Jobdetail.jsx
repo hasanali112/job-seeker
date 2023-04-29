@@ -6,7 +6,7 @@ const Jobdetail = () => {
   const jobData = useLoaderData();
   const { id } = useParams();
   const [jobDetails, setjobDetails] = useState({});
-  console.log(jobDetails);
+
 
   useEffect(() => {
     const jobDetail = jobData.find((jobId) => jobId.id == id);
@@ -15,7 +15,6 @@ const Jobdetail = () => {
 
 
   const handleApply = (id) =>{
-        console.log(id)
         addToDb(id)  
   }
   return (
