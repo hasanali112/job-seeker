@@ -11,7 +11,6 @@ import Applied from './Component/Applied.jsx';
 import Blog from './Component/Blog.jsx';
 import Statistic from './Component/Statistic.jsx';
 import Jobdetail from './Component/Jobdetail.jsx';
-import jobCardLoader from './Loader/gateloader.js';
 
 
 
@@ -33,8 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path:'applied',
-        element: <Applied></Applied>,
-        loader: jobCardLoader
+        element: <Applied></Applied> 
       },
       {
         path:'blog',

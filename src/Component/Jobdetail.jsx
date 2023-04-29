@@ -4,6 +4,7 @@ import { addToDb } from "../Utils/fakeDb";
 
 const Jobdetail = () => {
   const jobData = useLoaderData();
+  console.log(jobData)
   const { id } = useParams();
   const [jobDetails, setjobDetails] = useState({});
 
@@ -13,7 +14,7 @@ const Jobdetail = () => {
     setjobDetails(jobDetail);
   }, []);
 
-
+  
   const handleApply = (id) =>{
         addToDb(id)  
   }
