@@ -11,6 +11,7 @@ import Applied from './Component/Applied.jsx';
 import Blog from './Component/Blog.jsx';
 import Statistic from './Component/Statistic.jsx';
 import Jobdetail from './Component/Jobdetail.jsx';
+import Error from './Component/Error.jsx';
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App></App>,
+    errorElement:<Error></Error>,
     children:[
       {
         path:'/',
