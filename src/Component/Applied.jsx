@@ -36,7 +36,8 @@ const Applied = () => {
  const displayRemortSite =()=>{
   const remort = jobLoad.filter(jobCard => jobCard.remoteOrOnsite === "Remote")
    setjobCardSet(remort)
- } 
+ }
+ 
 
   return (
     <div>
