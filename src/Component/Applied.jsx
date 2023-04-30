@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link} from "react-router-dom";
 import { getShoppingCart } from "../Utils/fakeDb";
+import banner from '../assets/All Images/Vector.png'
 
 const Applied = () => {
   const [jobLoad, setjobLoad] =useState([])
@@ -27,9 +28,30 @@ const Applied = () => {
     setjobCardSet(saveJob)
   },[jobLoad])
 
+ const displayOnSite =()=>{
+  const onSite = jobLoad.filter(jobCard => jobCard.remoteOrOnsite === "Onsite")
+   setjobCardSet(onSite)
+ } 
+
+ const displayRemortSite =()=>{
+  const remort = jobLoad.filter(jobCard => jobCard.remoteOrOnsite === "Remote")
+   setjobCardSet(remort)
+ } 
+
   return (
     <div>
-      <h1 className="text-center mb-20 text-4xl font-bold bg-gray-100 p-10">Applied job here</h1>
+      <div className="flex mb-20 bg-gray-100">
+      <img src={banner} alt="" />
+      <h1 className="text-center mb-20 text-4xl font-bold  p-10 mt-6 mx-10">Applied job here</h1>
+       
+      </div>
+      
+         <div className="flex justify-end mr-44 space-x-6 mb-6" >
+             <button onClick={()=> displayRemortSite()} className="mt-4   inline-flex items-center h-9 px-4  font-medium text-white transition duration-200 rounded shadow-md  md:mb-0 bg-indigo-600 hover:bg-blue-700">Remort</button>
+             <button onClick={()=> displayOnSite()} className="mt-4   inline-flex items-center h-9 px-4  font-medium text-white transition duration-200 rounded shadow-md  md:mb-0 bg-indigo-600 hover:bg-blue-700">Onsite</button>
+         </div>
+        
+      
 
       <div>
         {jobCardSet.map((jobcart) => (
